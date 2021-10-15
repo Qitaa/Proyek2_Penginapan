@@ -32,7 +32,7 @@
         <th>Ruangan</th>
         <th>Tanggal</th>
         <th>Waktu Mulai</th>
-        <th>Waktu Selesai</th>
+        <th>Besok Checkout Jam</th>
         <th>Keperluan</th> 
         <th>Status</th> 
       </tr>
