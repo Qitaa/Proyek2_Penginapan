@@ -76,7 +76,7 @@
       @component('components.input-field')
           @slot('form_row', 'close')
           @slot('col', 'col-md-6')
-          @slot('input_label', 'Waktu Selesai')
+          @slot('input_label', 'Besok Checkout jam')
           @slot('input_type', 'text')
           @slot('input_id', 'end_time')
           @slot('input_name', 'end_time')
