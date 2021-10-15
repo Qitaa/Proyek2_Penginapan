@@ -28,7 +28,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
-                                <img src="{{  asset('storage/' . $datas->photo) }}" alt="">
+                                <img src="{{  asset('storage/' . $datas->photo) }}" alt=""  width="250px", height="200px">
                             </div>
                             <a href="#"><h4 class="sec_h4">{{ $datas->name }}</h4></a>
                             <h5>Rp.{{ $datas->capacity }},-</h5>
@@ -37,10 +37,12 @@
                     </div>
                     @endforeach
                 </div>
+                <br />
+                <br />
                  <a class="book_now_btn button_hover" href="/akomodasi">See More</a>
             </div>
         </section>
-        <!--================ Accomodation Area  =================-->
+        <!--================ Accomodation1 Area  =================-->
 
         <!--================ Facilities Area  =================-->
         <section class="facilities_area section_gap">
