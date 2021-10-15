@@ -1,12 +1,13 @@
 <div class="main-sidebar">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="/">ROOMING</a>
+      <img src="{{asset('image/Logo.png')}}" alt="" width="200px" height="120px">
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
       <a href="index.html">RM</a>
     </div>
     <ul class="sidebar-menu">
+      <br />
       @if (Auth::user()->role == 'USER')
 
         <li class="menu-header">Dashboard</li>
