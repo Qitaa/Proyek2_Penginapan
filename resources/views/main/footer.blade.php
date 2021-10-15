@@ -2,13 +2,13 @@
    <footer class="footer-area section_gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4  col-md-12 col-sm-12">
+            <div class="col-lg-6  col-md-12 col-sm-12">
                 <div class="single-footer-widget">
                     <h6 class="footer_title">About Agency</h6>
-                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+                    <p>Kami adalah Penginapan Sederhana yang berlokasikan di Kota Batulicin Kalimantan. Berdiri sejak 2019. </p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="single-footer-widget">
                     <h6 class="footer_title">Navigation Links</h6>
                     <div class="row">
@@ -28,13 +28,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="single-footer-widget">
-                    <h6 class="footer_title">Newsletter</h6>
-                    <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
-                
                 </div>
             </div>
             
