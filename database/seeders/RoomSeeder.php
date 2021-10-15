@@ -19,7 +19,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 1',
             'description'   => 'Family Room',
             'capacity'      => 4,
-            'harga'      => '200.000',
         ]);
 
         Room::create([
@@ -27,7 +26,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 2',
             'description'   => 'Family Room',
             'capacity'      => 4,
-            'harga'      => '200.000',
         ]);
 
         Room::create([
@@ -35,7 +33,7 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 3',
             'description'   => 'Family Room',
             'capacity'      => 4,
-            'harga'      => '200.000',
+
         ]);
 
         Room::create([
@@ -43,14 +41,12 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 4',
             'description'   => 'Twin room ',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
         Room::create([
             'id'            => 5,
             'name'          => 'Ruang 5',
             'description'   => 'Twin room',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
 
         Room::create([
@@ -58,7 +54,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 6',
             'description'   => 'Twin room ',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
 
         Room::create([
@@ -66,7 +61,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 7',
             'description'   => 'Twin room ',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
         
         Room::create([
@@ -74,7 +68,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 8',
             'description'   => 'Twin room',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
 
         Room::create([
@@ -82,7 +75,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 9',
             'description'   => 'Twin room ',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
 
         Room::create([
@@ -90,7 +82,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 10',
             'description'   => 'Twin room ',
             'capacity'      => 2,
-            'harga'      => '175.000',
         ]);
         
         Room::create([
@@ -98,7 +89,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 11',
             'description'   => 'Singel Room',
             'capacity'      => 1,
-            'harga'      => '95.000',
         ]);
 
         Room::create([
@@ -106,7 +96,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 12',
             'description'   => 'Singel Room',
             'capacity'      => 1,
-            'harga'      => '95.000',
         ]);
 
         Room::create([
@@ -114,7 +103,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 13',
             'description'   => 'Singel Room',
             'capacity'      => 1,
-            'harga'      => '95.000',
         ]);
 
         Room::create([
@@ -122,7 +110,6 @@ class RoomSeeder extends Seeder
             'name'          => 'Ruang 14',
             'description'   => 'Singel Room',
             'capacity'      => 1,
-            'harga'      => '95.000',
         ]);
     }
 }
