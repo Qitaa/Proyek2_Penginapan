@@ -60,7 +60,7 @@
                         <div class="gallery_img">
                             <img src="image/gallery/06.jpg" alt="">
                             <div class="hover">
-                            	<a class="light" href="image/gallery/05.jpg"><i class="fa fa-expand"></i></a>
+                            	<a class="light" href="image/gallery/06.jpg"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="gallery_img">
                             <img src="image/gallery/05.jpg" alt="">
                             <div class="hover">
-                            	<a class="light" href="image/gallery/06.jpg"><i class="fa fa-expand"></i></a>
+                            	<a class="light" href="image/gallery/05.jpg"><i class="fa fa-expand"></i></a>
                             </div>
                         </div>
                     </div>
