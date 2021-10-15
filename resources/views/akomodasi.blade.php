@@ -32,7 +32,7 @@
                                 <img src="{{  asset('storage/' . $datas->photo) }}" alt="">
                             </div>
                             <a href="#"><h4 class="sec_h4">{{ $datas->name }}</h4></a>
-                            <h5>{{ $datas->capacity }}<small>Kapasitas</small></h5>
+                            <h5>Rp.{{ $datas->capacity }},-</h5>
                             <p>{{ $datas->description }} </p>
                         </div>
                     </div>
@@ -40,5 +40,8 @@
                 </div>
             </div>
         </section>
+        <div class="d-flex justify-content-center">
+            {{ $data->render('pagination::bootstrap-4') }}
+        </div>
 @include('main.footer')
 @endsection

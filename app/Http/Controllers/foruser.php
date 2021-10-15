@@ -9,7 +9,9 @@ class foruser extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        
+        $data = Room::orderBy('created_at','desc')->limit(4)->get();
+        return view('welcome',compact('data'));
     }
     public function about()
     {
@@ -17,7 +19,7 @@ class foruser extends Controller
     }
     public function akomodasi()
     {
-        $data = Room::orderBy('created_at','desc')->paginate(4);
+        $data = Room::orderBy('created_at','desc')->paginate(12);
         return view('akomodasi',compact('data'));
     }
     public function galeri()

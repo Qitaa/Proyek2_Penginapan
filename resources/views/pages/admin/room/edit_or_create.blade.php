@@ -97,7 +97,7 @@
       @endcomponent
 
       @component('components.input-field')
-          @slot('input_label', 'Kapasitas')
+          @slot('input_label', 'Harga')
           @slot('input_type', 'number')
           @slot('input_name', 'capacity')
           @isset($item->capacity)
