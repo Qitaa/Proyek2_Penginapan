@@ -26,10 +26,10 @@
                 </div>
                 <div class="row mb_30">
                     @foreach ($data as $datas)
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-6 col-sm-6">
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
-                                <img src="{{  asset('storage/' . $datas->photo) }}" alt="" width="250px", height="200px">
+                                <img src="{{  asset('storage/' . $datas->photo) }}" alt="" width="400px", height="350px">
                             </div>
                             <a href="#"><h4 class="sec_h4">{{ $datas->name }}</h4></a>
                             <h5>Rp.{{ $datas->capacity }},-</h5>

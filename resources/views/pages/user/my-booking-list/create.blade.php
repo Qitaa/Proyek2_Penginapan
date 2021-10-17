@@ -67,10 +67,12 @@
           @slot('input_type', 'text')
           @slot('input_id', 'start_time')
           @slot('input_name', 'start_time')
-          @slot('placeholder', 'HH:mm')
+          @slot('placeholder', '10:00')
           @slot('input_classes', 'timepicker')
           @slot('form_group_class', 'col required')
           @slot('other_attributes', 'required')
+          @slot('value','09:00')
+          @slot('readonly','readonly')
       @endcomponent
 
       @component('components.input-field')
@@ -80,10 +82,12 @@
           @slot('input_type', 'text')
           @slot('input_id', 'end_time')
           @slot('input_name', 'end_time')
-          @slot('placeholder', 'HH:mm')
+          @slot('placeholder', '12:00')
           @slot('input_classes', 'timepicker')
           @slot('form_group_class', 'col required')
           @slot('other_attributes', 'required')
+          @slot('value','12:00')
+          @slot('readonly','readonly')
       @endcomponent
 
       @component('components.input-field')
