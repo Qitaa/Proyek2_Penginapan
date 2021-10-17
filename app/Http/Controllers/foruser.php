@@ -19,7 +19,7 @@ class foruser extends Controller
     }
     public function akomodasi()
     {
-        $data = Room::orderBy('created_at','desc')->paginate(12);
+        $data = Room::orderBy('created_at','desc')->paginate(6);
         return view('akomodasi',compact('data'));
     }
     public function galeri()

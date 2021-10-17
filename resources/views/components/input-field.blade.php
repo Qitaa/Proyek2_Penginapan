@@ -15,7 +15,10 @@
       <input type="{{ $input_type }}" 
       @isset($input_id) {{ 'id='.$input_id }} @endisset
       @isset($input_name) {{ 'name='.$input_name }} @endisset
-      @isset($placeholder) {{ 'placeholder='.$placeholder }} @endisset 
+      @isset($placeholder) {{ 'placeholder='.$placeholder }} @endisset
+      @isset($value) {{ 'value='.$value }} @endisset
+      @isset($readonly) {{ 'readonly='.$readonly }} @endisset
+      @isset($disabled) {{ 'disabled='.$disabled }} @endisset
       class="form-control @isset($input_classes) {{ $input_classes }} @endisset @error($input_name) is-invalid @enderror" 
       value="@isset($input_value){{ $input_value }}@else{{ ($input_type == 'password') ? '' : old($input_name) }}@endisset"
       @isset($other_attributes) {{ $other_attributes }} @endisset>
