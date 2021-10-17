@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-md-6 d_flex align-items-center">
                         <div class="about_content ">
-                            <h2 class="title title_color">About Us <br>Our History<br>Visi Dan Misi</h2>
+                            <h2 class="title title_color">Sejarah Kami<br>Visi Dan Misi</h2>
                             <p>Disini tempat bagi orang orang yang ingin merasakan keindahan alam di sekitar kalimantan. Kami juga sudah berdiri sejak tahun 2019.
                             </p>
                         </div>

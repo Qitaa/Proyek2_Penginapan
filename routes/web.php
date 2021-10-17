@@ -27,7 +27,7 @@ use App\Http\Controllers\ChangePassController;
 |
 */
 
-Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
+Auth::routes(['/register' => true, 'reset' => false, 'verify' => false]);
 /*Router untuk Halaman Depan */
 Route::get('/', [foruser::class, 'index']);
 Route::get('/about', [foruser::class, 'about']);
