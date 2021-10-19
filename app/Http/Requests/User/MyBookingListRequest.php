@@ -30,6 +30,7 @@ class MyBookingListRequest extends FormRequest
             'date'              => 'required|date_format:Y-m-d|after_or_equal:today',
             'end_time'          => 'required|date_format:H:i|after:start_time',
             'purpose'           => 'required|string|max:100',
+            'bukti'             => 'nullable|image|max:2048',
         ];
 
         $today = Carbon::now()->toDateString();

@@ -66,6 +66,8 @@ Route::prefix('/')
         ->name('my-booking-list.index');
         Route::get('/my-booking-list/create', [MyBookingListController::class, 'create'])
         ->name('my-booking-list.create');
+        Route::get('/my-booking-list/bukti', [MyBookingListController::class, 'bukti'])
+        ->name('my-booking-list.bukti');
         Route::post('/my-booking-list/store', [MyBookingListController::class, 'store'])
         ->name('my-booking-list.store');
         Route::put('/my-booking-list/{id}/cancel', [MyBookingListController::class, 'cancel'])
@@ -130,5 +132,11 @@ foreach ($users as $user) {
         ->name($user.'.change-pass.index');
         Route::put('/change-pass/update', [ChangePassController::class, 'update'])
         ->name($user.'.change-pass.update');
+        Route::put('/booking-list/{id}/update/{value}', [BookingListController::class, 'update'])
+        ->name('booking-list.update');
+        Route::get('/booking-list/json', [BookingListController::class, 'json'])
+        ->name('booking-list.json');
+
+
     });
 }

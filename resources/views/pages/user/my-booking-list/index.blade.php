@@ -139,11 +139,29 @@
         data: 'purpose',
       },
       {
-        name: 'bukti',
-        data: 'bukti',
-      },
+        name: 'room.price',
+        data: 'room.price',
+        render: function ( data, type, row ) {
+          var result = data;
 
-      {
+          
+          if(row.status === 'PENDING') {
+            result += ' <br><a href="{{ route('my-booking-list.bukti') }}" class="text-warning" data-id="'+row.id+'" '
+            + ' data-title="Bayar"'
+            + ' id="bayar-btn"'
+            + ' name="bayar-btn">Bayar'
+            + ' </a>';
+          }else if(row.status ==='BATAL' || row.status ==='DITOLAK'){
+            result += ' <br><p class="text-danger">Dibatalkan</p>';
+          }else {
+            result += ' <br><p class="text-success">Sukses</p>';
+          }
+
+
+          return result;
+            
+        }
+      },      {
         name: 'status',
         data: 'status',
         render: function ( data, type, row ) {
@@ -185,6 +203,8 @@
       $('#lara-method').attr('value', 'put');
       $('#confirm-modal').modal('show');
     });
+
+
 
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();

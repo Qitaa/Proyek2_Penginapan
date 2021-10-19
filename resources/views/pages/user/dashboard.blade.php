@@ -59,6 +59,7 @@
       <th>Waktu Mulai</th>
       <th>Waktu Selesai</th>
       <th>Keperluan</th>
+      <th>Pembayaran</th>
       <th>Status</th>
     </tr>
   @endslot
@@ -118,6 +119,10 @@
       {
         name: 'purpose',
         data: 'purpose',
+      },
+      {
+        name: 'bukti',
+        data: 'bukti',
       },
       {
         name: 'status',

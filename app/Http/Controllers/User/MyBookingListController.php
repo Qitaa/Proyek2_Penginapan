@@ -55,6 +55,15 @@ class MyBookingListController extends Controller
         ]);
     }
 
+    public function bukti()
+    {
+        $rooms = Room::orderBy('name')->get();
+
+        return view('pages.user.my-booking-list.bukti', [
+            'rooms' => $rooms,
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -66,6 +75,12 @@ class MyBookingListController extends Controller
         $data               = $request->all();
         $data['user_id']    = Auth::user()->id;
         $data['status']     = 'PENDING';
+
+        if(isset($data['bukti'])){
+            $data['bukti']          = $request->file('bukti')->store(
+                'assets/image/my-booking-list', 'public'
+            );
+        }
 
         $room               = Room::select('name')->where('id', $data['room_id'])->firstOrFail();
 
@@ -134,12 +149,12 @@ class MyBookingListController extends Controller
      */
     public function cancel($id)
     {
-        $item           = BookingList::findOrFail($id);
+        $itemss = BookingList::findOrFail($id);
         $data['status'] = 'BATAL';
 
-        $room               = Room::select('name')->where('id', $item->room_id)->firstOrFail();
+        $room               = Room::select('name')->where('id', $itemss->room_id)->firstOrFail();
 
-        if($item->update($data)) {
+        if($itemss->update($data)) {
             session()->flash('alert-success', 'Booking Ruang '.$room->name.' berhasil dibatalkan');
 
             $user_name          = $this->getUserName();
@@ -150,11 +165,11 @@ class MyBookingListController extends Controller
 
             $to_role    = 'USER';
 
-            dispatch(new SendEmail($user_email, $user_name, $room->name, $item->date, $item->start_time, $item->end_time, $item->purpose, $to_role, $user_name, 'https://google.com', $status));
+            dispatch(new SendEmail($user_email, $user_name, $room->name, $itemss->date, $itemss->start_time, $itemss->end_time, $itemss->purpose, $to_role, $user_name, 'https://google.com', $status));
             
             $to_role    = 'ADMIN';
 
-            dispatch(new SendEmail($admin->email, $user_name, $room->name, $item->date, $item->start_time, $item->end_time, $item->purpose, $to_role, $admin->name, 'https://google.com', $status));
+            dispatch(new SendEmail($admin->email, $user_name, $room->name, $itemss->date, $itemss->start_time, $itemss->end_time, $itemss->purpose, $to_role, $admin->name, 'https://google.com', $status));
             
         } else {
             session()->flash('alert-failed', 'Booking Ruang '.$room->name.' gagal dibatalkan');
@@ -174,4 +189,57 @@ class MyBookingListController extends Controller
     public function getUserEmail() {
         return Auth::user()->email;
     }
+
+    
+    public function show($id)
+    {
+        //
+    }
+
+
+
+/**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $itemss = BookingList::findOrFail($id);
+
+        return view('pages.user.my-booking-list.create', [
+            'item'  => $itemss 
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(MyBookingListRequest $request, $id)
+    {
+        $data = $request->all();
+
+        if(isset($data['bukti'])){
+            $data['bukti']          = $request->file('bukti')->store(
+                'assets/image/my-booking-list', 'public'
+            );
+        }
+
+        $itemss = BookingList::findOrFail($id);
+
+        if($itemss->update($data)) {
+            $request->session()->flash('alert-success', 'Pembayaran '.$itemss->name.' berhasil');
+        } else {
+            $request->session()->flash('alert-failed', 'Pembayaran '.$itemss->name.' gagal');
+        }
+        
+        return redirect()->route('my-booking-list.index');
+    }
+
+
 }

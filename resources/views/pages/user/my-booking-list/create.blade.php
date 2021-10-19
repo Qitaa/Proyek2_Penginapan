@@ -1,7 +1,11 @@
 @extends('layouts.main')
 
 @section('title')
-  Buat Booking - ROOMING
+@if(isset($itemss))
+Edit Data Ruangan - ROOMING
+@else 
+Tambah Data Ruangan - ROOMING
+@endif
 @endsection 
 
 @section('header-title')

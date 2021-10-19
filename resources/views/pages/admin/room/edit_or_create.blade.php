@@ -40,7 +40,10 @@
 @endsection 
     
 @section('section-lead')
-  Silakan isi form di bawah ini untuk @if(isset($item)) mengedit data {{ $item->name }} @else menambah data Ruangan. @endif
+  Silakan isi form di bawah ini untuk 
+  @if(isset($item)) mengedit data {{ $item->name }} 
+  @else menambah data Ruangan. 
+  @endif
 @endsection
 
 @section('content')
