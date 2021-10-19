@@ -25,7 +25,7 @@ class AdminBookingListSeeder extends Seeder
                 'date'          => $faker->date($format = 'Y-m-d', $max = 'now'),
                 'start_time'    => $faker->time($format = 'H:i', $max = 'now'),
                 'end_time'      => $faker->time($format = 'H:i', $max = 'now'),
-                'purpose'       => $faker->text($maxNbChars = 100),
+                'bukti'       => $faker->text(),
                 'status'        => $faker->randomElement($array = array ('PENDING','DISETUJUI','DITOLAK','BATAL')),
             ]);
         }
