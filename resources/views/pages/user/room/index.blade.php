@@ -27,7 +27,9 @@
         <th>Foto</th>
         <th>Nama</th>
         <th>Deskripsi</th>
+        <th>Kapasitas</th>
         <th>Harga</th>
+        
       </tr>
     @endslot
 
@@ -80,6 +82,11 @@
         name: 'capacity',
         data: 'capacity',
       },
+      {
+        name: 'price',
+        data: 'price',
+      },
+
     ],
     });
 

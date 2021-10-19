@@ -20,6 +20,8 @@ class Room extends Model
         'description',
         'capacity',
         'photo',
+        'price',
+        
     ];
 
     /**

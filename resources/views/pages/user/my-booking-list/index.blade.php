@@ -33,7 +33,8 @@
         <th>Tanggal</th>
         <th>Waktu Mulai</th>
         <th>Besok Checkout Jam</th>
-        <th>Keperluan</th> 
+        <th>Keperluan</th>
+        <th>Pembayaran</th> 
         <th>Status</th> 
       </tr>
     @endslot
@@ -137,6 +138,11 @@
         name: 'purpose',
         data: 'purpose',
       },
+      {
+        name: 'bukti',
+        data: 'bukti',
+      },
+
       {
         name: 'status',
         data: 'status',

@@ -31,6 +31,7 @@
         <th>Waktu Mulai</th>
         <th>Waktu Selesai</th>
         <th>Keperluan</th>
+        <th>Bukti Pembayaran</th>
         <th>Status</th>
       </tr>
     @endslot
@@ -169,7 +170,24 @@
         name: 'purpose',
         data: 'purpose',
       },
+
       {
+        name: 'bukti',
+        data: 'bukti',
+        orderable: false, 
+        searchable: false,
+        render: function ( data, type, row ) {
+          if(data != null) {
+            return `<div class="gallery gallery-fw">`
+              + `<a href="{{ asset('storage/${data}') }}" data-toggle="lightbox">`
+                + `<img src="{{ asset('storage/${data}') }}" class="img-fluid" style="min-width: 80px; height: auto;">`
+              + `</a>`
+            + '</div>';
+          } else {
+            return '-'
+          }
+        }
+      },      {
         name: 'status',
         data: 'status',
         render: function ( data, type, row ) {

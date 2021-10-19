@@ -97,7 +97,7 @@
       @endcomponent
 
       @component('components.input-field')
-          @slot('input_label', 'Harga')
+          @slot('input_label', 'Kapasitas')
           @slot('input_type', 'number')
           @slot('input_name', 'capacity')
           @isset($item->capacity)
@@ -116,6 +116,18 @@
           @endisset 
       @endcomponent
 
+      
+      @component('components.input-field')
+          @slot('input_label', 'Harga')
+          @slot('input_type', 'text')
+          @slot('input_name', 'price')
+          @slot('input_value', 'Rp.')
+          @isset($item->price)
+            @slot('input_value')
+              {{ $item->price}}
+            @endslot 
+          @endisset
+      @endcomponent
     @endslot
 
     @slot('card_footer', 'true')
