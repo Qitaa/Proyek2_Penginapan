@@ -20,7 +20,7 @@
   @component('components.datatables')
 
     @slot('buttons')
-      <a href="{{ route('room.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i>&nbsp;Tambah Ruangan</a>
+      <a href="{{ route('room.create') }}" title="tambahRuangan" class="btn btn-primary"><i class="fas fa-plus"></i>&nbsp;Tambah Ruangan</a>
     @endslot
     
     @slot('table_id', 'room-table')
