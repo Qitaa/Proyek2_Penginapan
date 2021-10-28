@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4" name="login">
                     {{ __('Login') }}
                   </button>
                   <p>Belum punya akun?  silahkan <a href="/register">Register disini<a></p>

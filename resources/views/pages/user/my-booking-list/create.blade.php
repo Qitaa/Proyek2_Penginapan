@@ -64,14 +64,6 @@ Tambah Data Ruangan - ROOMING
           @slot('other_attributes', 'required')
       @endcomponent
 
-      @component('components.input-field')
-          @slot('input_label', 'Tanggal CheckOut')
-          @slot('input_type', 'text')
-          @slot('input_name', 'date')
-          @slot('input_classes', 'datepicker')
-          @slot('form_group_class', 'required')
-          @slot('other_attributes', 'required')
-      @endcomponent 
                 {{-- Kosongi saja  --}}
 
       @component('components.input-field')
