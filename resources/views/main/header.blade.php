@@ -5,12 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{{ asset('image/favicon.png') }}" type="image/png">
-        <title>PenginapanSDH</title> 
+        <title>PenginapanSDH</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/linericon/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.carousel.min.css') }}"> 
+        <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/nice-select/css/nice-select.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/owl-carousel/owl.carousel.min.css') }}">
@@ -34,12 +34,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item {{ request()->is('/') ? 'active' : '' }}"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item {{ request()->is('about') ? 'active' : '' }}"><a class="nav-link" href="/about">About us</a></li>
-                            <li class="nav-item {{ request()->is('akomodasi') ? 'active' : '' }}"><a class="nav-link" href="/akomodasi">Accomodation</a></li>
-                            <li class="nav-item {{ request()->is('galeri') ? 'active' : '' }}"><a class="nav-link" href="/galeri">Gallery</a></li>
+                            <li class="nav-item {{ request()->is('/') ? 'active' : '' }}"><a class="nav-link" href="/">Berita</a></li>
+                            <li class="nav-item {{ request()->is('galeri') ? 'active' : '' }}"><a class="nav-link" href="/galeri">Info Vaksin</a></li>
+                            <li class="nav-item {{ request()->is('about') ? 'active' : '' }}"><a class="nav-link" href="/about">About Us</a></li>
                             <li class="nav-item {{ request()->is('kontak') ? 'active' : '' }}"><a class="nav-link" href="/kontak">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/masuk" style="color:blue">Book Now</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/masuk" style="color:blue">Login</a></li>
                         </ul>
                     </div>
                 </nav>

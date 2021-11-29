@@ -14,23 +14,22 @@
                     <div class="row">
                         <div class="col-6">
                             <ul class="list_style">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/galeri">Gallery</a></li>
+                                <li><a href="/">Berita</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/galeri">Info Vaksin</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul class="list_style">
-                                <li><a href="/akomodasi">Accomodation</a></li>
-                                
+
                                 <li><a href="/kontak">Contact</a></li>
-                                <li><a href="/masuk">Book Now</a></li>
+                                <li><a href="/masuk">Login</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="border_line"></div>
         <div class="row footer-bottom d-flex justify-content-between align-items-center">
@@ -40,7 +39,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="col-lg-4 col-sm-12 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-                
+
             </div>
         </div>
     </div>
